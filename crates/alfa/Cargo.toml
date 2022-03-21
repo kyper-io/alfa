@@ -1,0 +1,12 @@
+[package]
+name = "alfa"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+description = "An ultra-extensible low-latency algorithmic trading engine"
+homepage = "https://kyper.io/alfa"
+documentation = "https://docs.rs/alfa"
+repository = "https://github.com/kyper-io/alfa"
+readme = "../../README.md"
+
+[dependencies]
