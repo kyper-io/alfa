@@ -1,13 +1,26 @@
-# Alfa
+<!---
+SPDX-FileCopyrightText: © 2022 Alfa Authors
+
+SPDX-License-Identifier: Apache-2.0 OR MIT
+-->
+
+# Kyper / Alfa
+
+## Copyright
+
+Copyrights in the Alfa project are retained by their contributors. No
+copyright assignment is required to contribute to the Alfa project.
+
+For full authorship information, see [AUTHORS](AUTHORS) and the version control history.
 
 ## License
 
 Licensed under either of
 
  * Apache License, Version 2.0
-   ([LICENSE-APACHE](LICENSE-APACHE) or http://www.apache.org/licenses/LICENSE-2.0)
+   ([LICENSES/Apache-2.0](LICENSES/Apache-2.0.txt) or http://www.apache.org/licenses/LICENSE-2.0)
  * MIT license
-   ([LICENSE-MIT](LICENSE-MIT) or http://opensource.org/licenses/MIT)
+   ([LICENSES/MIT](LICENSES/MIT.txt) or http://opensource.org/licenses/MIT)
 
 at your option.
 
