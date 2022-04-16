@@ -1,27 +1,5 @@
-<!---
-SPDX-FileCopyrightText: © 2022 Alfa Authors
+# SPDX-FileCopyrightText: © 2022 Alfa Authors
+#
+# SPDX-License-Identifier: Apache-2.0 OR MIT
 
-SPDX-License-Identifier: Apache-2.0 OR MIT
--->
-
-# Names should be added to this file with this pattern:
-#
-# For individuals:
-#   Name <email address>
-#
-# For organizations:
-#   Organization <fnmatch pattern>
-#
-# See python fnmatch module documentation for more information.
-#
-# Please keep the list sorted.
-
-# BEGIN individuals section.
 James Beach <james@kyper.io>
-# Please DO NOT APPEND here. See comments at the top of the file.
-# END individuals section.
-
-# BEGIN organizations section.
-
-# Please DO NOT APPEND here. See comments at the top of the file.
-# END organizations section.
