@@ -6,10 +6,12 @@ SPDX-License-Identifier: Apache-2.0 OR MIT
 
 # Kyper / Alfa
 
+Coming soon.
+
 ## Copyright
 
-Copyrights in the Alfa project are retained by their contributors. No
-copyright assignment is required to contribute to the Alfa project.
+Copyrights in the Alfa project are retained by their contributors. No copyright
+assignment is required to contribute to the Alfa project.
 
 Every file includes explicit copyright and license notices. For full authorship
 information, see [AUTHORS](AUTHORS) and the version control history.
