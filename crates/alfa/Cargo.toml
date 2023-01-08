@@ -4,7 +4,7 @@
 
 [package]
 name = "alfa"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 license = "Apache-2.0 OR MIT"
 description = "An ultra-extensible low-latency algorithmic trading engine"
@@ -12,5 +12,7 @@ homepage = "https://kyper.io/alfa"
 documentation = "https://docs.rs/alfa"
 repository = "https://github.com/kyper-io/alfa"
 readme = "../../README.md"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]

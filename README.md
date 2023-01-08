@@ -6,8 +6,6 @@ SPDX-License-Identifier: Apache-2.0 OR MIT
 
 # Kyper / Alfa
 
-Coming soon.
-
 ## Copyright
 
 Copyrights in the Alfa project are retained by their contributors. No copyright
