@@ -2,7 +2,24 @@
 #
 # SPDX-License-Identifier: Apache-2.0 OR MIT
 
+# TODO: exclude examples?
 [workspace]
-members = ["crates/*"]
+members = ["crates/*", "examples/*"]
+
+[workspace.package]
+version = "0.1.1"
+edition = "2021"
+license = "Apache-2.0 OR MIT"
+homepage = "https://kyper.io/alfa"
+repository = "https://github.com/kyper-io/alfa"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[workspace.dependencies]
+anyhow = "1.0.68"     # TODO: replace with miette?
+chrono = "0.4.23"
+itertools = "0.10.5"
+ndarray = "0.15.6"
+polars = "0.26.1"
+serde = "1.0.152"
+serde_json = "1.0.91"

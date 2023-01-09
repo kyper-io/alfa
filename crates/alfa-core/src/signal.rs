@@ -4,6 +4,6 @@
  * SPDX-License-Identifier: Apache-2.0 OR MIT
  */
 
-// TODO: deny warnings in ci.yaml
-// TODO: selectively warn from clippy::restriction?
-#![warn(clippy::cargo, clippy::pedantic)]
+// TODO: strong typing
+pub type Signal = f64;
+pub type ExpiredSignal = Signal;

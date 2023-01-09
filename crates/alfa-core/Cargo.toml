@@ -3,9 +3,9 @@
 # SPDX-License-Identifier: Apache-2.0 OR MIT
 
 [package]
-name = "alfa"
-description = "An ultra-extensible algorithmic trading framework"
-documentation = "https://docs.rs/alfa"
+name = "alfa-core"
+description = "A low-latency algorithmic trading library"
+documentation = "https://docs.rs/alfa-core"
 version.workspace = true
 edition.workspace = true
 license.workspace = true
@@ -16,3 +16,5 @@ readme.workspace = true
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+itertools.workspace = true
+serde = { workspace = true, features = ["derive"] }

@@ -4,6 +4,8 @@
  * SPDX-License-Identifier: Apache-2.0 OR MIT
  */
 
-// TODO: deny warnings in ci.yaml
-// TODO: selectively warn from clippy::restriction?
-#![warn(clippy::cargo, clippy::pedantic)]
+// TODO: handle currency conversions
+
+// TODO: strong typing
+// TODO: avoid unnecessary overhead in private code?
+pub type Cash = f64;

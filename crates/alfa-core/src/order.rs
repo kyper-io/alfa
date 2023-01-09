@@ -4,6 +4,12 @@
  * SPDX-License-Identifier: Apache-2.0 OR MIT
  */
 
-// TODO: deny warnings in ci.yaml
-// TODO: selectively warn from clippy::restriction?
-#![warn(clippy::cargo, clippy::pedantic)]
+use crate::{InstrumentId, Quantity};
+
+// TODO: replace with trait?
+pub enum Order {
+    Market {
+        instrument_id: InstrumentId,
+        quantity: Quantity,
+    },
+}
