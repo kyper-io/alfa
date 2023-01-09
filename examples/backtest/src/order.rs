@@ -5,14 +5,14 @@
  */
 
 use alfa_core::{
-    Account, BestPrices, ExpiredSignal, Instrument, InstrumentExt, Position, Quantity, Signal,
+    BestPrices, ExpiredSignal, Instrument, InstrumentExt, Position, Quantity, Signal, StaticAccount,
 };
 
 fn target_quantity<P, I>(
     signal: Signal,
     position: &P,
     prices: BestPrices,
-    account: &Account<I>,
+    account: &StaticAccount<I>,
 ) -> Quantity
 where
     P: Position,
@@ -28,7 +28,7 @@ pub fn order_quantity<P, I>(
     prev_signal: ExpiredSignal,
     position: &P,
     prices: BestPrices,
-    account: &Account<I>,
+    account: &StaticAccount<I>,
 ) -> Quantity
 where
     P: Position,

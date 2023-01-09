@@ -27,7 +27,7 @@ mod size;
 mod trading_book;
 mod util;
 
-pub use account::{Account, AccountConfig};
+pub use account::{AccountConfig, StaticAccount};
 pub use cash::Cash;
 pub use fee::{Commission, MakerTaker};
 pub use fill::{Fill, FillLevel, SimulatorFill};

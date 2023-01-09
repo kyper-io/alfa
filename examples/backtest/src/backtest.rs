@@ -7,8 +7,8 @@
 use std::iter::once;
 
 use alfa_core::{
-    Account, AccountConfig, BestPrices, Cash, FillModel, Instrument, Order, Signal, SimulatorFill,
-    TopOfBookFillModel, UpdateFillModel,
+    AccountConfig, BestPrices, Cash, FillModel, Instrument, Order, Signal, SimulatorFill,
+    StaticAccount, TopOfBookFillModel, UpdateFillModel,
 };
 use chrono::prelude::*;
 use itertools::izip;
@@ -69,7 +69,7 @@ where
     let mut orders: Vec<_> = universe.iter().map(create_order).collect();
     let mut fill_models: Vec<_> = universe.iter().map(create_fill_model).collect();
     let mut fills: Vec<_> = universe.iter().map(create_fill).collect();
-    let mut account = Account::new(account, universe);
+    let mut account = StaticAccount::new(account, universe);
 
     // TODO: can ordered iteration be done more efficiently?
     for (timestamp, prev_signals, signals_, best_prices_, equity) in izip!(

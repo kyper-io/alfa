@@ -15,13 +15,13 @@ pub struct AccountConfig {
 }
 
 // TODO: remove bound on I?
-pub struct Account<I: Instrument + Clone> {
+pub struct StaticAccount<I: Instrument + Clone> {
     config: AccountConfig,
     balance: Cash,
     portfolio: StaticTradingBook<FifoPosition<I>>,
 }
 
-impl<I: Instrument + Clone> Account<I> {
+impl<I: Instrument + Clone> StaticAccount<I> {
     pub fn new(config: AccountConfig, universe: &[I]) -> Self {
         let balance = config.initial_balance;
         Self {
