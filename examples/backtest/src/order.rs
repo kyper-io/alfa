@@ -18,9 +18,20 @@ where
     P: Position,
     I: Instrument + Clone,
 {
-    let capital = account.balance().min(account.initial_balance()); // TODO: support generic compounding policies
+    // TODO: support generic compounding policies
+    let capital = account.initial_balance();
     let unit_value = position.underlying().to_notional_value(1.0, prices);
     (signal * capital) / unit_value
+}
+
+fn target_quantity_unit(signal: Signal) -> Quantity {
+    if signal > Signal::EPSILON {
+        1.0
+    } else if signal < -Signal::EPSILON {
+        -1.0
+    } else {
+        0.0
+    }
 }
 
 pub fn order_quantity<P, I>(
@@ -37,8 +48,7 @@ where
     if signal == prev_signal {
         0.0
     } else {
-        let delta_quantity =
-            target_quantity(signal, position, prices, account) - position.net_quantity();
+        let delta_quantity = target_quantity_unit(signal) - position.net_quantity();
         position.underlying().to_transactable(delta_quantity)
     }
 }
